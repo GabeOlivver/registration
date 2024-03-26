@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Student } from '../student';
+import { FormBuilder, FormGroup } from '@angular/forms';
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
@@ -7,10 +8,5 @@ import { Student } from '../student';
 })
 export class FormComponent {
   
-  student: Student[] = [ 
-    {enrolment:1, name:"Gabriel", course:"computer engineer"},
-    {enrolment:2, name:"Nina", course:"english"},
-    {enrolment:3, name:"Larry the Bird", course:"Seeds"},
-  ];
-
+  student: Student[] = [];
 }

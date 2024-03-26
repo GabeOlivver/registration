@@ -42,20 +42,10 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Gabiel Correa</td>
-              <td>Computer engineer</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Nina Moraes</td>
-              <td>English</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Larry the Bird</td>
-              <td>Seeds</td>
+            <tr *ngFor="let s of student">
+              <th scope="row">{{s.enrolment}}</th>
+              <td>{{s.name}}</td>
+              <td>{{s.course}}</td>
             </tr>
           </tbody>
         </table>
